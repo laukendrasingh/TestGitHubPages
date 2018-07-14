@@ -1,134 +1,102 @@
 <html>
 <head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<script type="text/javascript">
-function scrollto(div)
-{
- $('html,body').animate(
- {
-  scrollTop: $("#"+div).offset().top
- },'slow');
-}
-</script>
 <style>
-body
-{
- margin:0px auto;
- padding:0px;
- text-align:center;
- width:100%;
- font-family: "Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
- background-color:#A9D0F5;
+body {
+	margin: 0px auto;
+	padding: 0px;
+	text-align: center;
+	width: 100%;
+	font-family: "Myriad Pro", "Helvetica Neue", Helvetica, Arial,
+		Sans-Serif;
 }
-#header
-{
- width:100%;
- margin:0px auto;
- padding:0px;
- text-align:center;
- height:70px;
- line-height:70px;
+
+#header {
+	width: 100%;
+	margin: 0px auto;
+	padding: 0px;
+	text-align: center;
+	height: 70px;
+	line-height: 70px;
+	height: 320px;
 }
-#header li
-{
- display:inline-block;
- margin-right:25px;
- font-size:17px;
- color:#084B8A;
- font-weight:bold;
- cursor:pointer;
+
+#home, #basicPlan, #contact {
+	width: 90%;
+	margin-left: 5%;
+	padding: 50px;
+	box-sizing: border-box;
+	border-radius: 10px;
 }
-#header #site_name
-{
- text-align:left;
- width:680px;
- font-size:35px;
- margin-left:20px;
+#contact{
+	height: 200px;
 }
-#home,#about,#contact
-{
- margin-top:100px;
- width:90%;
- height:400px;
- margin-left:5%;
- padding:50px;
- box-sizing:border-box;
- background-color:#084B8A;
- border-radius:10px;
- color:white;
+
+#basicPlan {
+	text-align: left;
 }
-#home h1
-{
- font-size:40px;
+
+#home h1 {
+	font-size: 60px;
 }
-#home p
-{
- font-size:20px;
+
+#basicPlan {
+	height: 380px;
+	background: #efefef;
 }
-#about p
-{
- font-size:20px;
+
+li{
+	margin: 10px 0;
 }
-#contact input[type="text"]
-{
- width:250px;
- height:35px;
- padding-left:10px;
- float:left;
- margin-left:80px;
- border:none;
+.left-div{
+	float: left;
+	width: 50%;
 }
-#contact textarea
-{
- float:left;
- width:250px;
- height:35px;
- margin-left:20px;
- border:none;
- padding-left:10px;
- padding-top:10px;
+.right-div{
+	width: 50%;
+	margin-top: 75px;
+	float: right;
 }
-#contact input[type="submit"]
-{
- float:left;
- margin-left:20px;
- height:35px;
- width:100px;
- background:none;
- color:white;
- border:1px solid white;
+.enquiryLink{
+   padding: 20px;
+    background: #c3c1c1;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid #c0c4d0;
 }
 </style>
+
+<title>A Cheap Website Design Company In India.</title>
+
 </head>
 <body>
 
-<div id="header">
- <li id="site_name">TalkersCode.com</li>
- <li onclick="scrollto('home');">HOME</li>
- <li onclick="scrollto('about');">ABOUT</li>
- <li onclick="scrollto('contact');">CONTACT</li>
-</div>
+	<div id="home">
+		<h1>Welcome to MyWebsite.com</h1>
+		<h2>A Cheap Website Design Company In India.</h2>
+	</div>
 
-<div id="home">
- <h1>Hi,
-Demo Of One Page Website Template Using HTML, CSS And jQuery<p>TalkersCode.com</p></h1>
- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus quam quis nibh fringilla sit amet consectetur lectus malesuada. Sed nec libero erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mi nisi, rhoncus ut vestibulum ac, sollicitudin quis lorem. </p>
-</div>
+	<div id="basicPlan">
+		<h2>Get Your Website in Rs. 99</h2>
+		<div class="left-div">
+			<ul>
+				<li>1 Page</li>
+				<li>Inquiry Form</li>
+				<li>Responsive Design</li>
+				<li>Extra Pages Rs.299/Page</li>
+				<li>Domain & Web Hosting Charges Extra</li>
+			</ul>
+			<h3>Website will be ready within 24 hours</h3>
+		</div>
+		<div class="right-div">
+			<a href="https://docs.google.com/forms/d/e/1FAIpQLScdE9qzGqhBMMTQfpaaQSWYJx_QexdS-CiW6R8S3FEBlVERRw/viewform?c=0&w=1" class="enquiryLink">CLICK HERE TO ENQUIRY</a>
+		</div>
+	</div>
 
-<div id="about">
- <p>In this tutorial we will show you how to create One Page Website Template Using HTML, CSS And jQuery.Now you can build simple and beautiful website quickly.</p>
- <p>TalkersCode.com is a complete destination to learn Web Development with Best, Fast and Easy Methods for those who is a novice and wants to be the Xpert in Web Development.</p>
- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus quam quis nibh fringilla sit amet consectetur lectus malesuada. Sed nec libero erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mi nisi, rhoncus ut vestibulum ac, sollicitudin quis lorem. </p>
- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus quam quis nibh fringilla sit amet consectetur lectus malesuada. Sed nec libero erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mi nisi, rhoncus ut vestibulum ac, sollicitudin quis lorem. </p>
-</div>
-
-<div id="contact">
-<h1>If you have any question or query you can contact us at <br>talkerscode@gmail.com <br><br>or you can fill the form below</h1>
-<input type="text" placeholder="Name">
-<textarea placeholder="Message"></textarea>
-<input type="submit" value="SEND">
-</div>
+	<div id="contact">
+		<h2>If you have any question or query you can contact us at <br>MyWebsite@gmail.com</h2>
+	</div>
 
 </body>
 </html>
